@@ -3,11 +3,12 @@
 
 def key_for_min_value(values)
   highest = 0
-  item = ""
+  item = nil
   values.each do |key,value|
     if value > highest
       highest = value
       item = key
     end
   end
+  item
 end
